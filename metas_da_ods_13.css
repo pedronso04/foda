@@ -1,4 +1,4 @@
-/* Default styling for all screen sizes */
+
 * {
     font-size: 30px;
 }
@@ -59,7 +59,7 @@ p {
     color: #f2f2f2;
 }
 
-/* Media query for smaller screens */
+
 @media only screen and (max-width: 768px) {
     * {
         font-size: 20px;
