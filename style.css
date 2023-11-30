@@ -114,4 +114,27 @@ main {
         max-width: 100%; /* Garantir que as imagens se ajustem à largura da tela */
         height: auto;
     }
+    .container {
+        grid-template-columns: 1fr; /* 1 coluna de tamanho igual */
+        height: auto; /* Ajustar a altura do contêiner */
+    }
+
+    .quadrado {
+        width: 100%;
+        height: auto; /* Ajustar a altura do quadrado */
+        margin: 20px 0; /* Reduzir o espaço entre os quadrados */
+    }
+
+    .quadrado h2 {
+        font-size: 16px; /* Ajustar o tamanho da fonte */
+        text-align: center; /* Centralizar o texto */
+    }
+
+    .aqui {
+        display: block; /* Tornar o link "clique aqui" um elemento de bloco */
+        text-align: center;
+        margin-top: 5px;
+        text-decoration: underline;
+        color: white; /* Manter a cor branca do link */
+    }
 }
