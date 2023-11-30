@@ -1,0 +1,48 @@
+body {
+    background-color: rgb(162, 161, 161);
+}
+
+form {
+    color: rgb(255, 153, 0);
+}
+
+h1 {
+    color: rgb(255, 153, 0);
+}
+
+#video-bg {
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    min-height: 100%;
+    min-width: 100%;
+    z-index: -1;
+}
+
+#content {
+    position: relative;
+    z-index: 1;
+}
+
+video::-webkit-media-controls {
+    display: none !important;
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        background-color: lightgray; /* Altera a cor de fundo para telas menores */
+    }
+
+    form {
+        font-size: 14px; /* Ajusta o tamanho da fonte para telas menores */
+        margin: 20px; /* Adiciona margem para melhor espaçamento */
+    }
+
+    h1 {
+        font-size: 24px; /* Ajusta o tamanho da fonte do título para telas menores */
+    }
+
+    #video-bg {
+        display: none; /* Oculta o vídeo em telas menores */
+    } 
+  }

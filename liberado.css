@@ -1,0 +1,153 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    overflow: hidden; /* Para remover barras de rolagem */
+}
+
+video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1; /* Coloca o vídeo atrás dos outros elementos */
+}
+
+header {
+    background-color: rgb(35, 56, 14);
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+header img {
+    max-width: 200px;
+    max-height: 200px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+main {
+    padding: 20px;
+    color: white; /* Garante que o texto seja visível no topo do vídeo */
+}
+
+.container {
+    display: grid;
+    grid-gap: 40px; /* Espaço de 40px entre as colunas */
+    justify-content: center;
+    height: 200vh;
+}
+
+.quadrado {
+    width: 700px;
+    height: 180px;
+    background-color: rgb(35, 56, 14);
+    margin: 40px; /* Espaço entre os quadrados */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.quadrado h2 {
+    text-align: center;
+}
+
+.aqui {
+    color: white;
+    text-decoration: underline;
+    margin-left: 5px;
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        grid-template-columns: repeat(2, 1fr); /* 2 colunas de tamanho igual */
+    }
+
+    .quadrado {
+        width: 100%;
+    }
+
+    header {
+        padding: 10px;
+    }
+
+    header img {
+        max-width: 80px;
+        max-height: 80px;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav a {
+        margin: 5px 0;
+    }
+
+    main {
+        padding: 10px;
+    }
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 480px) {
+    body {
+        overflow: auto; /* Reabilitar a rolagem para telas menores */
+    }
+
+    video {
+        display: none; /* Ocultar o vídeo em telas menores */
+    }
+
+    header img {
+        max-width: 60px;
+        max-height: 60px;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 10px;
+    }
+
+    nav a {
+        margin: 5px 0;
+    }
+
+    .container {
+        grid-template-columns: 1fr; /* 1 coluna de tamanho igual */
+        height: auto; /* Ajustar a altura do contêiner */
+    }
+
+    .quadrado {
+        width: 100%;
+        height: auto; /* Ajustar a altura do quadrado */
+        margin: 20px 0; /* Reduzir o espaço entre os quadrados */
+    }
+
+    .quadrado h2 {
+        font-size: 16px; /* Ajustar o tamanho da fonte */
+        text-align: center; /* Centralizar o texto */
+    }
+
+    .aqui {
+        display: block; /* Tornar o link "clique aqui" um elemento de bloco */
+        text-align: center;
+        margin-top: 5px;
+        text-decoration: underline;
+        color: white; /* Manter a cor branca do link */
+    }
+}
