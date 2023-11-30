@@ -30,15 +30,15 @@ video::-webkit-media-controls {
 
 @media only screen and (max-width: 600px) {
     body {
-        background-color: lightgray; /* Altera a cor de fundo para telas menores */
+        background-color: lightgray; 
     }
 
     form {
-        font-size: 14px; /* Ajusta o tamanho da fonte para telas menores */
-        margin: 20px; /* Adiciona margem para melhor espaçamento */
+        font-size: 14px; 
+        margin: 20px; 
     }
 
     h1 {
-        font-size: 24px; /* Ajusta o tamanho da fonte do título para telas menores */
+        font-size: 24px; 
     }
   }
