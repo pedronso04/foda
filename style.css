@@ -74,9 +74,7 @@ main {
         overflow: auto; /* Reabilitar a rolagem para telas menores */
     }
 
-    video {
-        display: none; /* Ocultar o vídeo em telas menores */
-    }
+   
 
     header img {
         max-width: 60px;
