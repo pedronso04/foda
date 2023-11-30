@@ -1,4 +1,4 @@
-/* Default styles for all screens */
+
 * {
     font-size: 30px;
 }
@@ -60,27 +60,27 @@ footer {
 }
 
 .image-container img {
-    width: 50%; /* Define a largura das imagens */
+    width: 50%;
     height: 600px;
     width: 600px;
 }
 
 
-/* Media query for smaller screens */
+
 @media only screen and (max-width: 600px) {
     .artigo1 p {
-        font-size: 20px; /* Ajustar o tamanho da fonte para o conteúdo do artigo 1 em telas menores */
+        font-size: 20px; 
     }
 
     .artigo1 blockquote {
-        font-size: 20px; /* Ajustar o tamanho da fonte para as citações do artigo 1 em telas menores */
+        font-size: 20px; 
     }
 
     .artigo1 .image-container img {
-        width: 100%; /* Fazer as imagens ocuparem a largura total do contêiner */
-        height: auto; /* Manter a proporção */
-        margin-bottom: 20px; /* Reduzir a margem inferior entre as imagens */
+        width: 100%; 
+        height: auto; 
+        margin-bottom: 20px; 
     }
 
-    /* Estilos adicionais para o rodapé ou outras seções do artigo, se necessário */
+    
 }
