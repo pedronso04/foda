@@ -2,7 +2,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-    overflow: hidden; /* Para remover barras de rolagem */
+    overflow: hidden;
 }
 
 video {
@@ -11,7 +11,7 @@ video {
     left: 0;
     min-width: 100%;
     min-height: 100%;
-    z-index: -1; /* Coloca o vídeo atrás dos outros elementos */
+    z-index: -1; 
 }
 
 header {
@@ -40,12 +40,12 @@ nav a {
 
 main {
     padding: 20px;
-    color: white; /* Garante que o texto seja visível no topo do vídeo */
+    color: white;
 }
 
 .container {
     display: grid;
-    grid-gap: 40px; /* Espaço de 40px entre as colunas */
+    grid-gap: 40px;
     justify-content: center;
     height: 200vh;
 }
@@ -54,7 +54,7 @@ main {
     width: 700px;
     height: 180px;
     background-color: rgb(35, 56, 14);
-    margin: 40px; /* Espaço entre os quadrados */
+    margin: 40px; 
     display: flex;
     align-items: center;
     justify-content: center;
@@ -72,7 +72,7 @@ main {
 
 @media screen and (max-width: 768px) {
     .container {
-        grid-template-columns: repeat(2, 1fr); /* 2 colunas de tamanho igual */
+        grid-template-columns: repeat(2, 1fr); 
     }
 
     .quadrado {
@@ -102,10 +102,10 @@ main {
     }
 }
 
-/* Media query for smaller screens */
+
 @media screen and (max-width: 480px) {
     body {
-        overflow: auto; /* Reabilitar a rolagem para telas menores */
+        overflow: auto; 
     }
 
     
@@ -126,23 +126,23 @@ main {
     }
 
     .container {
-        grid-template-columns: 1fr; /* 1 coluna de tamanho igual */
-        height: auto; /* Ajustar a altura do contêiner */
+        grid-template-columns: 1fr;
+        height: auto;
     }
 
     .quadrado {
         width: 100%;
-        height: auto; /* Ajustar a altura do quadrado */
-        margin: 20px 0; /* Reduzir o espaço entre os quadrados */
+        height: auto; 
+        margin: 20px 0; 
     }
 
     .quadrado h2 {
-        font-size: 16px; /* Ajustar o tamanho da fonte */
-        text-align: center; /* Centralizar o texto */
+        font-size: 16px; 
+        text-align: center; 
     }
 
     .aqui {
-        display: block; /* Tornar o link "clique aqui" um elemento de bloco */
+        display: block; 
         text-align: center;
         margin-top: 5px;
         text-decoration: underline;
