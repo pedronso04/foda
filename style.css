@@ -133,6 +133,6 @@ main {
         text-align: center;
         margin-top: 5px;
         text-decoration: underline;
-        color: white; /* Manter a cor branca do link */
+        background-color: rgb(35, 56, 14);
     }
 }
