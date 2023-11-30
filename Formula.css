@@ -41,8 +41,4 @@ video::-webkit-media-controls {
     h1 {
         font-size: 24px; /* Ajusta o tamanho da fonte do título para telas menores */
     }
-
-    #video-bg {
-        display: none; /* Oculta o vídeo em telas menores */
-    } 
   }
