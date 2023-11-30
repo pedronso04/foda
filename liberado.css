@@ -108,9 +108,7 @@ main {
         overflow: auto; /* Reabilitar a rolagem para telas menores */
     }
 
-    video {
-         /* Ocultar o vídeo em telas menores */
-    }
+    
 
     header img {
         max-width: 60px;
@@ -148,6 +146,6 @@ main {
         text-align: center;
         margin-top: 5px;
         text-decoration: underline;
-        color: white; /* Manter a cor branca do link */
+        background-color: rgb(35, 56, 14);
     }
 }
